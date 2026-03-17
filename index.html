@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacific Corporate Security</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('pcs-hero.jpg') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+    }
+
+    .hero p {
+      color: #7ED957;
+      font-size: 20px;
+      margin: 15px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin-right: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #7ED957;
+      color: black;
+    }
+
+    .btn-outline {
+      border: 2px solid #7ED957;
+      color: #7ED957;
+    }
+
+    /* TRUST BAR */
+    .trust {
+      background: #111;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .trust span {
+      margin: 0 15px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* SERVICES */
+    .services {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #111;
+      padding: 25px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border: 1px solid #7ED957;
+    }
+
+    .card h3 {
+      color: #7ED957;
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 80px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    .about-text {
+      max-width: 500px;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      padding: 80px 20px;
+      background: #111;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: black;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="container hero-content">
+    <h1>PACIFIC CORPORATE SECURITY</h1>
+    <p>ONE CALL. ONE RESPONSE.</p>
+    <p>Your one-stop shop for all your security needs in Papua New Guinea.</p>
+    <a href="#" class="btn btn-primary">Get Protection</a>
+    <a href="#" class="btn btn-outline">Contact Us</a>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <span>ISO 9001:2015 Certified</span>
+  <span>100% PNG Owned</span>
+  <span>Since 2004</span>
+  <span>Nationwide Coverage</span>
+</section>
+
+<!-- SERVICES -->
+<section class="services container">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Static Guards</h3><p>Professional site protection and patrol.</p></div>
+    <div class="card"><h3>Armed Guards</h3><p>High-risk security and protection services.</p></div>
+    <div class="card"><h3>K9 Unit</h3><p>Advanced dog-assisted security operations.</p></div>
+    <div class="card"><h3>VIP Escort</h3><p>Secure transport and escort services.</p></div>
+    <div class="card"><h3>Emergency Response</h3><p>24/7 tactical rapid response team.</p></div>
+    <div class="card"><h3>GPS Tracking</h3><p>Real-time vehicle monitoring systems.</p></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about container">
+  <img src="pcs-about.jpg" alt="PCS">
+  <div class="about-text">
+    <h2>Your One Stop Security Partner</h2>
+    <p>
+      Pacific Corporate Security Ltd is a 100% PNG-owned, ISO-certified security company
+      delivering trusted services since 2004. Our trained guards and professional team
+      ensure the highest level of protection and service.
+    </p>
+    <a href="#" class="btn btn-primary">Learn More</a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Secure Your Business?</h2>
+  <p>Contact PCS today and protect what matters most.</p>
+  <a href="#" class="btn btn-primary">Get Started</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Pacific Corporate Security Ltd. All rights reserved.
+</footer>
+
+</body>
+</html>
