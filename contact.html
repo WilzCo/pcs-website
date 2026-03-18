@@ -28,7 +28,7 @@
   </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO (NO ANIMATION) -->
 <section class="hero" style="background: url('pcs-hero.jpg') center/cover no-repeat;">
   <div class="overlay"></div>
 
@@ -43,13 +43,13 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section class="container">
+<section class="container fade-in">
   <h2 class="section-title">GET IN TOUCH</h2>
 
   <div class="grid">
 
     <!-- CONTACT INFO -->
-    <div class="card">
+    <div class="card fade-in delay-1">
       <h3>Contact Information</h3>
       <p><strong>Phone:</strong> +675 323 2339</p>
       <p><strong>Mobile:</strong> +675 7148 4518</p>
@@ -58,7 +58,7 @@
     </div>
 
     <!-- CONTACT FORM -->
-    <div class="card">
+    <div class="card fade-in delay-2">
       <h3>Send a Message</h3>
 
       <form>
@@ -74,7 +74,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta">
+<section class="cta fade-in">
   <h2>Need Immediate Assistance?</h2>
   <p>Contact PCS now and our team will respond promptly to your needs.</p>
   <a href="tel:+67571484518" class="btn btn-primary">Call Now</a>
@@ -85,6 +85,7 @@
   © 2026 Pacific Corporate Security Ltd. All rights reserved.
 </footer>
 
+<!-- SCROLL ANIMATION SCRIPT -->
 <script>
   const elements = document.querySelectorAll('.fade-in');
 
@@ -98,6 +99,6 @@
 
   elements.forEach(el => observer.observe(el));
 </script>
-  
+
 </body>
 </html>
