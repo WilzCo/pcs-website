@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="styles.css">
   
   <title>Pacific Corporate Security</title>
-
 </head>
 
 <body>
@@ -17,7 +16,7 @@
 <header class="navbar">
   <div class="container nav-content">
     <a href="index.html">
-  <img src="logo.png" class="logo">
+      <img src="logo.png" class="logo">
     </a>
 
     <nav>
@@ -29,7 +28,7 @@
   </div>
 </header>
   
-<!-- HERO -->
+<!-- HERO (NO ANIMATION) -->
 <section class="hero hero-home">
   <div class="overlay"></div>
 
@@ -54,8 +53,8 @@
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="trust">
+<!-- TRUST (SUBTLE FADE) -->
+<section class="trust fade-in">
   <span>ISO 9001:2015 Certified</span>
   <span>100% PNG Owned</span>
   <span>Since 2004</span>
@@ -63,22 +62,23 @@
 </section>
 
 <!-- SERVICES -->
-<section class="services container">
+<section class="services container fade-in">
   <h2 class="section-title">OUR SERVICES</h2>
   <div class="grid">
-    <div class="card"><h3>Static Guards</h3><p>Professional site protection and patrol.</p></div>
-    <div class="card"><h3>Armed Guards</h3><p>High-risk security and protection services.</p></div>
-    <div class="card"><h3>K9 Unit</h3><p>Advanced dog-assisted security operations.</p></div>
-    <div class="card"><h3>VIP Escort</h3><p>Secure transport and escort services.</p></div>
-    <div class="card"><h3>Emergency Response</h3><p>24/7 tactical rapid response team.</p></div>
-    <div class="card"><h3>GPS Tracking</h3><p>Real-time vehicle monitoring systems.</p></div>
+    <div class="card fade-in delay-1"><h3>Static Guards</h3><p>Professional site protection and patrol.</p></div>
+    <div class="card fade-in delay-2"><h3>Armed Guards</h3><p>High-risk security and protection services.</p></div>
+    <div class="card fade-in delay-3"><h3>K9 Unit</h3><p>Advanced dog-assisted security operations.</p></div>
+    <div class="card fade-in delay-1"><h3>VIP Escort</h3><p>Secure transport and escort services.</p></div>
+    <div class="card fade-in delay-2"><h3>Emergency Response</h3><p>24/7 tactical rapid response team.</p></div>
+    <div class="card fade-in delay-3"><h3>GPS Tracking</h3><p>Real-time vehicle monitoring systems.</p></div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about container">
-  <img src="pcs-about.jpg" alt="PCS">
-  <div class="about-text">
+<section class="about container fade-in">
+  <img src="pcs-about.jpg" alt="PCS" class="fade-in delay-1">
+
+  <div class="about-text fade-in delay-2">
     <h2 class="section-title">ABOUT PCS</h2>
     <p>
       Pacific Corporate Security Ltd is a 100% PNG-owned, ISO-certified security company
@@ -90,7 +90,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta">
+<section class="cta fade-in">
   <h2>Ready to Secure Your Business?</h2>
   <p>Contact PCS today and protect what matters most.</p>
   <a href="contact.html" class="btn btn-primary">Get Started</a>
@@ -101,6 +101,7 @@
   © 2026 Pacific Corporate Security Ltd. All rights reserved.
 </footer>
 
+<!-- SCROLL ANIMATION SCRIPT -->
 <script>
   const elements = document.querySelectorAll('.fade-in');
 
@@ -114,6 +115,6 @@
 
   elements.forEach(el => observer.observe(el));
 </script>
-  
+
 </body>
 </html>
