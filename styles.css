@@ -1,6 +1,6 @@
 :root {
   --primary-green: #8DC63F;
-  --secondary-blue: #2E3192; /* NEW */
+  --secondary-blue: #2E3192;
   --dark-overlay: rgba(0, 0, 0, 0.75);
   --background: #0a0a0a;
   --text: #ffffff;
@@ -48,6 +48,7 @@ h2 {
 
 h3 {
   color: var(--secondary-blue);
+  margin-bottom: 10px;
 }
 
 /* LAYOUT */
@@ -72,6 +73,10 @@ section {
   z-index: 10;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0,0,0,0.85);
 }
 
 .nav-content {
@@ -143,6 +148,11 @@ nav {
   max-width: 600px;
 }
 
+/* HERO TITLE ACCENT */
+.hero h1 span {
+  color: var(--secondary-blue);
+}
+
 /* TAGLINE */
 .tagline {
   color: var(--primary-green);
@@ -185,6 +195,11 @@ nav {
   color: var(--primary-green);
 }
 
+.btn-outline:hover {
+  background: var(--primary-green);
+  color: #111;
+}
+
 .hero-buttons {
   display: flex;
   gap: 15px;
@@ -197,7 +212,7 @@ nav {
   gap: 20px;
 }
 
-/* CARDS (UPDATED PREMIUM GRADIENT) */
+/* CARDS */
 .card {
   background: linear-gradient(
     145deg,
@@ -207,11 +222,13 @@ nav {
   padding: 20px;
   border-radius: 10px;
   border-left: 4px solid var(--primary-green);
+  border: 1px solid rgba(255,255,255,0.05);
   transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* SECTION TITLE */
@@ -255,9 +272,10 @@ nav {
   margin: 0 20px;
   font-size: 13px;
   color: #888;
+  letter-spacing: 1px;
 }
 
-/* CTA (UPDATED GRADIENT) */
+/* CTA */
 .cta {
   text-align: center;
   background: linear-gradient(
