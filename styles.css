@@ -18,9 +18,14 @@ body {
   color: var(--text);
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 p {
   color: var(--subtext);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 h1 {
@@ -46,7 +51,7 @@ section {
   padding: 80px 0;
 }
 
-/* NAVBAR (FINAL CLEAN VERSION) */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -56,6 +61,7 @@ section {
   backdrop-filter: blur(10px);
   z-index: 10;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
 }
 
 .nav-content {
@@ -154,6 +160,10 @@ nav {
   color: #111;
 }
 
+.btn-primary:hover {
+  background: #7ab82f;
+}
+
 .btn-outline {
   border: 2px solid var(--primary-green);
   color: var(--primary-green);
@@ -181,7 +191,7 @@ nav {
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-6px) scale(1.01);
 }
 
 /* SECTION TITLE */
@@ -195,14 +205,7 @@ nav {
   margin-bottom: 20px;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: black;
-  color: #777;
-}
-
+/* ABOUT */
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -220,6 +223,7 @@ footer {
   max-width: 500px;
 }
 
+/* TRUST BAR */
 .trust {
   background: #111;
   text-align: center;
@@ -234,6 +238,7 @@ footer {
   color: #888;
 }
 
+/* CTA */
 .cta {
   text-align: center;
   background: #111;
@@ -259,4 +264,12 @@ form textarea:focus {
 form button {
   margin-top: 15px;
   width: 100%;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: #777;
 }
