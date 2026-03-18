@@ -238,3 +238,25 @@ footer {
   text-align: center;
   background: #111;
 }
+
+/* CONTACT FORM */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 1px solid var(--primary-green);
+}
+
+form button {
+  margin-top: 15px;
+  width: 100%;
+}
