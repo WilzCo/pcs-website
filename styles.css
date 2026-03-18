@@ -1,5 +1,6 @@
 :root {
   --primary-green: #8DC63F;
+  --secondary-blue: #2E3192; /* NEW */
   --dark-overlay: rgba(0, 0, 0, 0.75);
   --background: #0a0a0a;
   --text: #ffffff;
@@ -43,6 +44,10 @@ h1 {
 h2 {
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+h3 {
+  color: var(--secondary-blue);
 }
 
 /* LAYOUT */
@@ -213,11 +218,10 @@ nav {
 .section-title {
   display: inline-block;
   background: var(--primary-green);
-  color: #1a1a1a;
+  color: var(--secondary-blue);
   padding: 10px 25px;
   border-radius: 30px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 /* ABOUT */
