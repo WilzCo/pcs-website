@@ -28,7 +28,7 @@
   </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO (NO ANIMATION HERE) -->
 <section class="hero" style="background: url('pcs-about.jpg') center/cover no-repeat;">
   <div class="overlay"></div>
 
@@ -43,13 +43,13 @@
 </section>
 
 <!-- WHO WE ARE -->
-<section class="container">
+<section class="container fade-in">
   <h2 class="section-title">WHO WE ARE</h2>
 
   <div class="about">
-    <img src="pcs-about.jpg" alt="PCS Team">
+    <img src="pcs-about.jpg" alt="PCS Team" class="fade-in delay-1">
 
-    <div class="about-text">
+    <div class="about-text fade-in delay-2">
       <p>
         Pacific Corporate Security Ltd (PCS) is a 100% Papua New Guinea owned company,
         providing professional and reliable security services nationwide. Since 2004,
@@ -66,12 +66,12 @@
 </section>
 
 <!-- MISSION & VISION -->
-<section class="container">
+<section class="container fade-in">
   <h2 class="section-title">OUR MISSION & VISION</h2>
 
   <div class="grid">
 
-    <div class="card">
+    <div class="card fade-in delay-1">
       <h3>Our Mission</h3>
       <p>
         To provide professional, reliable, and effective security services through
@@ -79,7 +79,7 @@
       </p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in delay-2">
       <h3>Our Vision</h3>
       <p>
         To be the leading security provider in Papua New Guinea, recognized for
@@ -91,22 +91,22 @@
 </section>
 
 <!-- CORE VALUES -->
-<section class="container">
+<section class="container fade-in">
   <h2 class="section-title">CORE VALUES</h2>
 
   <div class="grid">
-    <div class="card"><h3>Integrity</h3></div>
-    <div class="card"><h3>Professionalism</h3></div>
-    <div class="card"><h3>Respect</h3></div>
-    <div class="card"><h3>Accountability</h3></div>
+    <div class="card fade-in delay-1"><h3>Integrity</h3></div>
+    <div class="card fade-in delay-2"><h3>Professionalism</h3></div>
+    <div class="card fade-in delay-3"><h3>Respect</h3></div>
+    <div class="card fade-in delay-1"><h3>Accountability</h3></div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="container">
+<section class="container fade-in">
   <h2 class="section-title">OUR EXPERIENCE</h2>
 
-  <div class="card">
+  <div class="card fade-in delay-1">
     <p>
       With over 20 years of experience in the security industry, PCS has grown into
       a trusted and reliable provider serving clients across multiple regions in
@@ -117,7 +117,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta">
+<section class="cta fade-in">
   <h2>Work With a Trusted Security Partner</h2>
   <p>Partner with PCS and experience professional and reliable protection services.</p>
   <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -128,7 +128,8 @@
   © 2026 Pacific Corporate Security Ltd. All rights reserved.
 </footer>
 
-  <script>
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
   const elements = document.querySelectorAll('.fade-in');
 
   const observer = new IntersectionObserver(entries => {
@@ -141,6 +142,6 @@
 
   elements.forEach(el => observer.observe(el));
 </script>
-  
+
 </body>
 </html>
