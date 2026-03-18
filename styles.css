@@ -14,7 +14,12 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: var(--background);
+  background: linear-gradient(
+    180deg,
+    #0a0a0a 0%,
+    #111111 40%,
+    #1a1a1a 100%
+  );
   color: var(--text);
 }
 
@@ -99,7 +104,13 @@ nav {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url('pcs-hero.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.9)
+    ),
+    url('pcs-hero.jpg') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
