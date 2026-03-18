@@ -219,3 +219,22 @@ footer {
 .about-text {
   max-width: 500px;
 }
+
+.trust {
+  background: #111;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.trust span {
+  margin: 0 20px;
+  font-size: 13px;
+  color: #888;
+}
+
+.cta {
+  text-align: center;
+  background: #111;
+}
