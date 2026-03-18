@@ -1,7 +1,7 @@
 :root {
-  --primary-green: #22C55E; /* upgraded modern green */
+  --primary-green: #22C55E;
   --primary-green-dark: #16A34A;
-  --secondary-blue: #0B1F3A; /* deep navy */
+  --secondary-blue: #0B1F3A;
   --secondary-blue-light: #1B2E4A;
   --dark-overlay: rgba(0, 0, 0, 0.75);
 
@@ -116,9 +116,10 @@ nav {
   font-weight: 600;
 }
 
-/* HERO */
+/* HERO (FIXED VERSION) */
 .hero {
-  height: 100vh;
+  min-height: 60vh; /* FIXED */
+  padding: 120px 0 80px; /* FIXED */
   background:
     linear-gradient(
       to bottom,
@@ -132,6 +133,12 @@ nav {
   margin-top: 70px;
 }
 
+/* OPTIONAL: FULL HERO FOR HOMEPAGE ONLY */
+.hero-home {
+  min-height: 100vh;
+}
+
+/* OVERLAY */
 .overlay {
   position: absolute;
   width: 100%;
@@ -186,7 +193,6 @@ nav {
   transform: translateY(-2px);
 }
 
-/* PRIMARY BUTTON */
 .btn-primary {
   background: var(--primary-green);
   color: #02120a;
@@ -196,7 +202,6 @@ nav {
   background: var(--primary-green-dark);
 }
 
-/* OUTLINE BUTTON */
 .btn-outline {
   border: 2px solid var(--primary-green);
   color: var(--primary-green);
@@ -339,17 +344,8 @@ footer {
   }
 
   .hero {
-    height: auto;
     padding: 120px 0 60px;
     text-align: center;
-  }
-
-  .hero-content {
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: 100%;
   }
 
   h1 {
@@ -363,7 +359,6 @@ footer {
 
   .hero-buttons .btn {
     width: 80%;
-    text-align: center;
   }
 
   .grid {
@@ -373,10 +368,6 @@ footer {
   .about {
     flex-direction: column;
     text-align: center;
-  }
-
-  .about-text {
-    max-width: 100%;
   }
 
   .trust span {
@@ -391,11 +382,6 @@ footer {
 
   .cta h2 {
     font-size: 24px;
-  }
-
-  form input,
-  form textarea {
-    font-size: 14px;
   }
 
 }
