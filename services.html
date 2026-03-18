@@ -28,7 +28,7 @@
   </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO (NO ANIMATION) -->
 <section class="hero" style="background: url('pcs-hero.jpg') center/cover no-repeat;">
   <div class="overlay"></div>
   <div class="container hero-content">
@@ -42,47 +42,47 @@
 </section>
 
 <!-- SERVICES -->
-<section class="container">
+<section class="container fade-in">
   <h2 class="section-title">SECURITY SERVICES</h2>
 
   <div class="grid">
 
-    <div class="card">
+    <div class="card fade-in delay-1">
       <h3>Static Guards</h3>
       <p>Highly trained personnel providing site security, access control, and patrol services.</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in delay-2">
       <h3>Armed Guards</h3>
       <p>Specialized armed security officers for high-risk environments and asset protection.</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in delay-3">
       <h3>K9 Unit</h3>
       <p>Dog-assisted security operations for enhanced detection and deterrence.</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in delay-1">
       <h3>VIP Escort</h3>
       <p>Secure escort and transport services for executives and high-profile individuals.</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in delay-2">
       <h3>Emergency Response</h3>
       <p>24/7 tactical response team ready to handle emergencies and critical situations.</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in delay-3">
       <h3>Cash & Valuables Transit</h3>
       <p>Secure transportation of money and high-value assets with armed protection.</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in delay-1">
       <h3>Security Risk Assessment</h3>
       <p>Professional evaluation of sites to identify risks and recommend solutions.</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in delay-2">
       <h3>GPS Tracking (MiTrack)</h3>
       <p>Real-time tracking and monitoring system for improved fleet and asset security.</p>
     </div>
@@ -91,7 +91,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta">
+<section class="cta fade-in">
   <h2>Need Professional Security Services?</h2>
   <p>Contact PCS today for reliable and trusted protection solutions.</p>
   <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -102,6 +102,7 @@
   © 2026 Pacific Corporate Security Ltd. All rights reserved.
 </footer>
 
+<!-- SCROLL ANIMATION SCRIPT -->
 <script>
   const elements = document.querySelectorAll('.fade-in');
 
@@ -115,6 +116,6 @@
 
   elements.forEach(el => observer.observe(el));
 </script>
-  
+
 </body>
 </html>
