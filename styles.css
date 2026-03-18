@@ -220,3 +220,8 @@ footer {
 .hero-content {
   text-align: left;
 }
+
+.navbar a.active {
+  color: var(--primary-green);
+  font-weight: 600;
+}
