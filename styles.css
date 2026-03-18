@@ -202,3 +202,20 @@ footer {
   background: black;
   color: #777;
 }
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 500px;
+}
