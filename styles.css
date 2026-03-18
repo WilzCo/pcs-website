@@ -192,9 +192,13 @@ nav {
   gap: 20px;
 }
 
-/* CARDS */
+/* CARDS (UPDATED PREMIUM GRADIENT) */
 .card {
-  background: rgba(255,255,255,0.05);
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.02)
+  );
   padding: 20px;
   border-radius: 10px;
   border-left: 4px solid var(--primary-green);
@@ -249,10 +253,14 @@ nav {
   color: #888;
 }
 
-/* CTA */
+/* CTA (UPDATED GRADIENT) */
 .cta {
   text-align: center;
-  background: #111;
+  background: linear-gradient(
+    135deg,
+    #111 0%,
+    #1a1a1a 100%
+  );
 }
 
 /* CONTACT FORM */
@@ -291,7 +299,6 @@ footer {
 
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   .nav-content {
     flex-direction: column;
     gap: 10px;
@@ -306,7 +313,6 @@ footer {
     margin: 5px 10px;
   }
 
-  /* HERO */
   .hero {
     height: auto;
     padding: 120px 0 60px;
@@ -335,12 +341,10 @@ footer {
     text-align: center;
   }
 
-  /* GRID */
   .grid {
     grid-template-columns: 1fr;
   }
 
-  /* ABOUT SECTION */
   .about {
     flex-direction: column;
     text-align: center;
@@ -350,24 +354,20 @@ footer {
     max-width: 100%;
   }
 
-  /* TRUST BAR */
   .trust span {
     display: block;
     margin: 5px 0;
   }
 
-  /* SECTION TITLE */
   .section-title {
     font-size: 14px;
     padding: 8px 20px;
   }
 
-  /* CTA */
   .cta h2 {
     font-size: 24px;
   }
 
-  /* FORM */
   form input,
   form textarea {
     font-size: 14px;
